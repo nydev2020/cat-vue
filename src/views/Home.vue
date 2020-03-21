@@ -1,8 +1,7 @@
 <template>
   <div>
     <HamburgerMenu></HamburgerMenu>
-    <h3>HOME</h3>
-    <router-link to="/users">Users</router-link>
+    <HomeTop></HomeTop>
     <HomeProfile></HomeProfile>
     <HomeSkill></HomeSkill>
     <HomeWork></HomeWork>
@@ -14,13 +13,15 @@ import HomeProfile from "../components/HomeProfile.vue";
 import HomeSkill from '../components/HomeSkill.vue';
 import HomeWork from "../components/HomeWork";
 import HamburgerMenu from "../components/HamburgerMenu.vue";
+import HomeTop from "../components/HomeTop.vue"
 
 export default {
   components: {
     HomeProfile,
     HomeSkill,
     HomeWork,
-    HamburgerMenu
+    HamburgerMenu,
+    HomeTop
   }
 }
 </script>

@@ -9,11 +9,13 @@
       <nav id="gnav" class="nav" v-show="active">
         <div class="nav__body">
           <ul class="nav__list">
-            <li class="nav__item">Home</li>
-            <li class="nav__item">About</li>
-            <li class="nav__item">Skill</li>
-            <li class="nav__item">Work</li>
+            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="#about">About</a></li>
+            <li class="nav__item"><a href="#skill">Skill</a></li>
+            <li class="nav__item"><a href="#work">Work</a></li>
             <li class="nav__item">Post</li>
+            <li class="nav__item"><router-link to="/" tag="a">Profile</router-link></li>
+            <li class="nav__item"><router-link to="/users" tag="div">Users</router-link></li>
           </ul>
         </div>
       </nav>
@@ -40,6 +42,7 @@ export default {
     background-color: transparent;
     border: none;
     position: relative;
+    position: fixed;
     z-index: 100;
     appearance: none;
     cursor: pointer;
@@ -65,7 +68,7 @@ export default {
     }
   }
   .nav {
-    width: 30%;
+    width: 20%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -83,9 +86,12 @@ export default {
       line-height: 2;
       position: relative;
       display: table;
+      a {
+        text-decoration: none;
+        color: #333;
+      }
       &::after {
         position: absolute;
-        
         bottom: 10px;
         left: 0;
         content: '';

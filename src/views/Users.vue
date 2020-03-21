@@ -2,7 +2,7 @@
   <div>
     <HamburgerMenu></HamburgerMenu>
     <h3>Users</h3>
-    <router-link to="/">Home</router-link>
+    
   </div>
 
 </template>
